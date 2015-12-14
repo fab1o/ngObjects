@@ -1,0 +1,14 @@
+.outer {
+
+    width: 560px;
+    height: 560px;
+
+}
+
+.inner {
+
+    width: 140px;
+    height: 140px;
+
+    float: left;
+}

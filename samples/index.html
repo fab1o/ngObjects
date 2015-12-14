@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>ngObjects Samples</title>
+
+    <link rel="stylesheet" href="app.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="../release/ng-objects.js"></script>
+
+    <script src="app.js"></script>
+
+</head>
+
+<body ng-controller="appController" ng-cloak>
+
+    <ng-objects></ng-objects>
+
+    <div class="jumbotron">
+
+        <div class="container">
+
+            <p>1. Use arrow keys to navigate the grid of selectable buttons. Press enter to select</p>
+
+            <div class="outer">
+
+                <div class="inner" ng-repeat="button in vm.buttons">
+
+                    <button class="btn btn-lg" ng-class="{ 'btn-primary' : button.isFocused, 'btn-success' : button.isSelected }">
+
+                        {{:: button.name }}
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
