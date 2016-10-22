@@ -4,3 +4,6 @@ A simple to use AngularJS module to build a navigation system using object mappi
 
 `npm install`
 
+## Examples of use
+
+Develop TV and Game console applications.
